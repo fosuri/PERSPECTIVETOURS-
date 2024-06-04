@@ -98,7 +98,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: violet;
+  /* background-color: violet; */
   width: 950px;
   /* padding-top: 200px; */
 }
@@ -133,7 +133,7 @@ h1 {
 }
 
 header {
-  /* background-color: #e0e0e0; */
+  background-color: #e0e0e0;
   box-shadow: 0px 8px 16px rgba(29, 29, 29,0.5);
   height: 80px;
 
@@ -141,7 +141,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  background-color: red;
+  /* background-color: red; */
   position: fixed;
   width: 100%;
   z-index: 99;
@@ -149,7 +149,7 @@ header {
 }
 
 .header-wrapper {
-  background-color: yellow;
+  /* background-color: yellow; */
   width: 1416px;
   display: flex;
   flex-shrink: 0;
@@ -158,7 +158,7 @@ header {
 }
 
 .header-logo {
-  background-color: aqua;
+  /* background-color: aqua; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -167,7 +167,7 @@ header {
 
 
 .header-menu {
-  background-color: blue;
+  /* background-color: blue; */
   margin-left: auto;
 }
 
@@ -264,9 +264,10 @@ nav svg:hover {
   justify-content: center;
   position: fixed;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 80px);
   top: 0;
   left: 0;
+  z-index: 6;
 }
 
 
@@ -283,7 +284,7 @@ nav svg:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 5;
+  z-index: 8;
   cursor: default;
   box-shadow: 0px 0px 0px 6000px rgb(29, 29, 29,0.5);
 }
@@ -317,8 +318,10 @@ nav svg:hover {
 
 main {
   width: 1416px;
-  background-color: wheat;
+  /* background-color: wheat; */
+  background-color: #e0e0e0;
   margin: 0 auto;
+  box-shadow: 0px 0px 158px  rgba(0, 0, 0, 0.05);
 }
 
 .red-text {
@@ -339,7 +342,7 @@ main {
 }
 
 .offer-content {
-  background-color: darkmagenta;
+  /* background-color: darkmagenta; */
 
   display: flex;
   flex-direction: row;
@@ -347,7 +350,7 @@ main {
 }
 
 .offer-info {
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -404,23 +407,23 @@ h3 {
 
 
 .offer-image-slider {
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
   width: 50%;
-  /* height: 100%; */
   overflow: hidden;
-
+  /* border-radius: 4px; */
+  z-index: 0;
 }
 
 .slider-items {
-  background-color: hwb(0 0% 0% / 0.445);
+  /* background-color: hwb(0 22% 39%); */
   width: 100%;
   height: 100%;
   display: flex;
-  object-fit: cover;
-  animation: slide 15s infinite;
+  animation: slide 35s infinite;
 }
 
 .slider-items img {
+  aspect-ratio: 16/9;
   width: 100%;
   object-fit: cover;
 }
@@ -533,7 +536,7 @@ hr {
   display: flex;
   flex-direction: row;
   gap: 24px;
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
   width: 1176px;
   margin: 0 auto;
 }
@@ -609,7 +612,7 @@ hr {
 }
 
 .open-form {
-  background-color: darkseagreen;
+  /* background-color: darkseagreen; */
   width: 936px;
   margin: 0 auto;
   display: flex;
@@ -684,7 +687,7 @@ hr {
 }
 
 .reviews {
-  background-color: darkgreen;
+  /* background-color: darkgreen; */
   display: flex;
   gap: 24px;
 }
@@ -745,13 +748,12 @@ hr {
 
 
 .partners {
-  background-color: salmon;
+  /* background-color: salmon; */
 
   display: flex;
   flex-direction: row;
   width: 100%;
   gap: 24px;
-  /* flex-wrap: wrap; */
   justify-content: center;
 }
 
@@ -776,12 +778,11 @@ hr {
   flex-direction: column;
   gap: 72px;
   justify-content: center;
-  /* justify-content: space-evenly; */
 }
 
 
 .who-container {
-  background-color: darkmagenta;
+  /* background-color: darkmagenta; */
 
   display: flex;
   flex-direction: row;
@@ -789,7 +790,7 @@ hr {
 }
 
 .who-worker {
-  background-color: dodgerblue;
+  /* background-color: dodgerblue; */
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -910,7 +911,7 @@ h4 {
 
 .footer-info {
   display: flex;
-  background-color: springgreen;
+  /* background-color: springgreen; */
   gap: 24px;
 }
 
@@ -937,7 +938,7 @@ footer hr {
 }
 
 .footer-container {
-  background-color: rgb(179, 179, 248);
+  /* background-color: rgb(179, 179, 248); */
   width: 50%;
 }
 
@@ -965,6 +966,16 @@ footer hr {
   }
 }
 
+
+@media (max-height: 800px) {
+  .one-screen-section {
+    height: 100%;
+  }  
+
+  .section-space {
+  margin: 60px 0;
+  }  
+}
 
 
 @media (max-width: 1100px) {
@@ -1163,12 +1174,12 @@ footer hr {
   }
 
   .who-info {
-    background-color: #CD1E1E;
+    /* background-color: #CD1E1E; */
     width: 100%;
   }
 
   .who-image {
-    background-color: #2DA719;
+    /* background-color: #2DA719; */
     width: 74.11764705882353%;
     height: 250px;
     margin: 0 auto;
